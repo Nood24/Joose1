@@ -1,0 +1,46 @@
+1. Categories for addItem and partition into choices
+
+
+Item Instance (assume Suppliers called 1 and 2, items called A and B:
+	- 1A 1B (same supplier different name)
+	- 1A 2B (different supplier different name)
+ 	- 1B 2B (different supplier same name)
+	- 1A 1A (same supplier same name)
+
+
+Item Barcode:
+	- not a number (is a string)
+	- < 99
+	- 99
+	- between 99 and 9998 (eg 1000)
+	- 9999
+	- greater than 9999 (eg 10000)
+	- null
+
+
+Item name:
+	- Doesn't have a name
+	- Empty string entered as a name
+	- Contains special characters.
+
+
+Item quantity:
+	- The quantity of an item not specified
+	- The quantity of an item is not a numeric value.
+	- less than zero
+	- zero
+ 	- between zero and 100 (eg 40)
+	- 100
+	- Greater than 100 (eg 200)
+
+
+Item supplier:
+	- no supplier name
+	- name with zero characters 
+	- name contains special characters
+
+
+Item type:
+	- Item is a valid type
+	- Item is not a valid type
+	- null
